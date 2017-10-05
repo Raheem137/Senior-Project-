@@ -48,3 +48,35 @@ p{
 	left:0;
 	z-index: 999;
 }
+
+header{
+	background: #999;
+	color: white;
+}
+
+.format{
+	margin: 0;
+}
+
+header h1{
+	margin: 0;
+}
+
+nav ul{
+	margin: 0;
+}
+
+nav ul li{
+	background: black;
+	list-style-type: none;
+	display: inline-block;
+	padding: 5px 15px;
+}
+
+nav ul li a{
+	color: white;
+}
+
+ul li {
+	display: inline-block;
+}
