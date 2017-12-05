@@ -3,13 +3,23 @@
 
 	<head>
 		<title>Simulation</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="sim.css">
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+				<script src="main.js"></script>
+
 	</head>
 
 	<body>
 
 		<div class="format">
 			<header>
+
+				<h1> My Page </h1>
+				</header>
+				<nav>
+
 				<img src="logo.png" class="logo" alt="UF">
 				<nav>
 					<ul>
@@ -20,9 +30,34 @@
 						<li><a href="About.html"> About </a></li>
 					</ul>
 				</nav>
-			</header>
+
 		</div>
+
+		<div id="wrapper">
+      <div class="form-wrap">
+          <form id="form">
+            <div class="input-box">
+              Initial Velocity:
+              <input type="text" id="v-input">
+              <span class="hint">enter a value between 0 to 100 m/s</span>
+            </div>
+            <div class="input-box">
+              Angle:
+              <input type="text" id="angle-input">
+              <span class="hint">enter a value between 0&deg; and 90&deg;</span>
+            </div>
+            <button id="simulate">Simulate!</button>
+          </form>
+      </div>
+      <div class="graph-wrap">
+        <div id="graph">
+          <div id="ball"></div>
+        </div>
+      </div>
+    </div>
+
 		<h1> My Page </h1>
+t
 
 		<input type="range" name="length" min="0" max="100" value="0" step=".5" onchange="sliderChange(this.value)" /><br/><br />
 
@@ -45,6 +80,7 @@
 		</script>
 
 		<button onclick= "" >Submit</button>
+
 
 	</body>
 
